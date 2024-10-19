@@ -4,7 +4,7 @@ import { NextResponse } from 'next/server';
 const client_id = process.env.SPOTIFY_CLIENT_ID;
 const client_secret = process.env.SPOTIFY_CLIENT_SECRET;
 const redirect_uri = process.env.NODE_ENV === 'production'
-  ? 'https://your-vercel-app.vercel.app/api/callback' // Replace with your Vercel app URL
+  ? 'https://stati-fy.vercel.app/api/callback' // Replace with your Vercel app URL
   : 'http://localhost:3000/api/callback'; // Local development URL
 
 export async function GET(req) {
